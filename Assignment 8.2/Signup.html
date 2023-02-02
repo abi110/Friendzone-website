@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="nonempty.js"></script>
+    <script src="passwordcheck.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up-Friendzone</title>
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <p class="login">Please note your email must be unique</p>
+    <form
+      name="signup"
+      action="signup.php"
+      method="post"
+      onsubmit="return validateFormSignup()"
+    >
+      <input
+        type="text"
+        name="name"
+        maxlength="30"
+        placeholder="Full name"
+      /><br />
+      <input
+        type="text"
+        name="email"
+        maxlength="100"
+        placeholder="Email"
+      /><br />
+      <input type="password" name="pwd" placeholder="Password" />
+      <br />
+      <input
+        type="password"
+        name="pwdrepeat"
+        placeholder="Repeat password"
+      /><br />
+      <button type="submit" name="submit">Sign up</button>
+    </form>
+    <p class="login">
+      Or return to <a id="pglink" href="index.html"><u>home</u></a> and login
+    </p>
+  </body>
+</html>
